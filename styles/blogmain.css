@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    color: #F1FFFA;
+    margin-top: 200px;
+    margin-left: 10%;
+}

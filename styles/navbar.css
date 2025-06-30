@@ -1,0 +1,44 @@
+nav {
+    height: 80px;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+li {
+    list-style-type: none;
+    color: #F1FFFA;
+    display: inline-block;
+    margin-right: 40px;
+    font-size: .8rem;
+}
+
+.callNow{
+    font-size: 1rem;
+    padding: 8px 15px;
+    background-color: #EB5E28;
+    border-radius: 15px;
+}
+
+.links {
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+}
+img{
+    width: 100px;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+body{
+    background: #0D1321;
+}
+
+a{
+    text-decoration: none;
+}

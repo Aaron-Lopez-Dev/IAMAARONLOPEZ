@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --rich-black: #0d1321ff;
+--mint-cream: #f1fffaff;
+--flame: #eb5e28ff;
+--chefchaouen-blue: #5386e4ff;
+--battleship-gray: #7d7e75ff; */
+
+.contentBox{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h4{
+    color: #F1FFFA;
+    font-size: 5rem;
+    margin-top: 250px;
+}
+
+#whyMe{
+    height: 50vh;
+    margin: auto;
+}

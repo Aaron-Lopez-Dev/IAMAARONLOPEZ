@@ -1,0 +1,15 @@
+*{
+    color: #F1FFFA;
+    line-height: 1.4;
+}
+
+.post{
+    width: 90%;
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+h1,
+h2{
+    opacity: .8;
+}

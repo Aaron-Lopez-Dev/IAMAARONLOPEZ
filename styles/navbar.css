@@ -5,6 +5,8 @@ nav {
     position: fixed;
     width: 100vw;
     top: 0;
+    background-color: #0D1321;
+    z-index: 999;
 }
 
 li {
@@ -29,6 +31,11 @@ li {
 }
 img{
     width: 100px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .logo {
@@ -39,6 +46,4 @@ body{
     background: #0D1321;
 }
 
-a{
-    text-decoration: none;
-}
+

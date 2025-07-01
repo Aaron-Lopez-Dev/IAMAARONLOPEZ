@@ -25,7 +25,32 @@ h4{
     margin-top: 0;
 }
 
-#whyMe{
+#services{
     height: 50vh;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero  {
+    height: 90vh;
+     border: white 2px solid;
+}
+
+.services{
+    height: 100%;
+    width: 30%;
+    border: white 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 45%;
+}
+
+h2{
+    color: #F1FFFA;
 }

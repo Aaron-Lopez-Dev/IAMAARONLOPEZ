@@ -9,14 +9,14 @@
 --chefchaouen-blue: #5386e4ff;
 --battleship-gray: #7d7e75ff; */
 
-.contentBox{
+.contentBox {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 
 }
 
-h2{
+h2 {
     color: #F1FFFA;
     font-size: 1.3rem;
     margin-top: 250px;
@@ -25,34 +25,43 @@ h2{
     width: 100%;
 }
 
-.heroText{
+.heroText {
     font-size: 6rem;
 }
 
 
-.serviceSection{
+.serviceSection {
     height: 50vh;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-span{
+
+span {
     color: #F1FFFA98;
 }
-.hero  {
+
+.enhance{
+    color: #F1FFFA;
+    font-size: 1.3rem;
+    margin-top: 10px;
+
+}
+
+.hero {
     display: flex;
-    height: 35vh;
+    height: 40vh;
     align-items: end;
     top: 80px;
 }
 
-.services{
+.services {
     height: 100%;
     width: 30%;
     display: flex;
@@ -61,42 +70,47 @@ span{
     align-items: center;
 }
 
-.serviceSection{
+.serviceSection {
     height: 50vh;
 }
 
-img{
+img {
     width: 45%;
 }
 
-h4{
+h4 {
     color: #F1FFFA;
 }
 
-h3{
+h3 {
     color: #F1FFFA90;
     font-size: 1rem;
     display: flex;
     margin-left: 3%;
 }
 
-.why{
+.why {
     height: 50vh;
 }
 
-.contact{
+.contact {
     height: 100vh;
 }
-@media (1200px) and (max-width: 1500px){
+
+@media screen and (max-width: 900px) {
+
+    .heroText {
+        font-size: 4.4rem;
+    }
 
 }
 
-
 @media screen and (max-width: 600px) {
-    h4{
+    h4 {
         font-size: 4rem;
     }
-    .serviceSection{
+
+    .serviceSection {
         display: flex;
         height: 100%;
         flex-direction: column;
@@ -104,19 +118,22 @@ h3{
         align-items: center;
         height: 140vh;
     }
-    img{
+
+    img {
         width: 40%;
     }
 
-    .services{
+    .services {
         margin-bottom: 25px;
         width: 80%;
         height: 33%;
     }
-    .hero{
-        height: 30vh;
+
+    .hero {
+        height: 35vh;
     }
-    .heroText{
+
+    .heroText {
         font-size: 3rem;
     }
 

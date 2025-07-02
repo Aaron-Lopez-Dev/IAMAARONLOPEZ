@@ -11,6 +11,6 @@ function updateButtons() {
   }
 }
 
-window.addEventListener('resize', updateButtons);
+window.addEventListener('load', updateButtons);
 
 

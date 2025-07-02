@@ -13,44 +13,111 @@
     width: 90%;
     max-width: 1200px;
     margin: auto;
+
 }
 
-h4{
+h2{
     color: #F1FFFA;
-    font-size: 5rem;
+    font-size: 1.3rem;
     margin-top: 250px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
 }
 
-#textChange{
-    margin-top: 0;
+.heroText{
+    font-size: 6rem;
 }
 
-#services{
+
+.serviceSection{
     height: 50vh;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+span{
+    color: #F1FFFA98;
+}
 .hero  {
-    height: 90vh;
-     border: white 2px solid;
+    display: flex;
+    height: 35vh;
+    align-items: end;
+    top: 80px;
 }
 
 .services{
     height: 100%;
     width: 30%;
-    border: white 2px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.serviceSection{
+    height: 50vh;
+}
+
 img{
     width: 45%;
 }
 
-h2{
+h4{
     color: #F1FFFA;
+}
+
+h3{
+    color: #F1FFFA90;
+    font-size: 1rem;
+    display: flex;
+    margin-left: 3%;
+}
+
+.why{
+    height: 50vh;
+}
+
+.contact{
+    height: 100vh;
+}
+@media (1200px) and (max-width: 1500px){
+
+}
+
+
+@media screen and (max-width: 600px) {
+    h4{
+        font-size: 4rem;
+    }
+    .serviceSection{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+    }
+    img{
+        width: 40%;
+    }
+
+    .services{
+        margin-bottom: 25px;
+        width: 80%;
+        height: 33%;
+    }
+    .hero{
+        height: 30vh;
+    }
+    .heroText{
+        font-size: 3rem;
+    }
+
 }

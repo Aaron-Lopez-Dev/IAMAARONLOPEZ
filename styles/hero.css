@@ -1,13 +1,36 @@
+:root{
+    --main-text-color: #f1fffaff;
+    --secondary-text-color: #f1fffa90;
+    --main-bg: #0d1321ff;
+    --accent-flame: #eb5e28ff;
+    --accent-chefchaouen-Blue: #5386e4ff;
+    --accent-batteship-Grey: #7d7e75ff;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* --rich-black: #0d1321ff;
---mint-cream: #f1fffaff;
---flame: #eb5e28ff;
---chefchaouen-blue: #5386e4ff;
---battleship-gray: #7d7e75ff; */
+body{
+    color: var(--main-text-color)
+}
+
+.description,
+.serviceDescription,
+.whyDescription{
+    color: var(--secondary-text-color);
+}
+.whyHeading{
+    font-size: 1.9rem;
+    text-align: center;
+}
+.whyDescription{
+    line-height: 1.7;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
 
 .contentBox {
     width: 90%;
@@ -17,7 +40,6 @@
 }
 
 h2 {
-    color: #F1FFFA;
     font-size: 1.3rem;
     margin-top: 250px;
     text-align: center;
@@ -28,7 +50,6 @@ h2 {
 .heroText {
     font-size: 6rem;
 }
-
 
 .serviceSection {
     height: 50vh;
@@ -43,14 +64,10 @@ h2 {
     justify-content: center;
 }
 
-span {
-    color: #F1FFFA98;
-}
-
 .enhance{
-    color: #F1FFFA;
     font-size: 1.3rem;
     margin-top: 10px;
+    border: 2px solid white;
 
 }
 
@@ -70,31 +87,31 @@ span {
     align-items: center;
 }
 
-.serviceSection {
+.serviceSection,
+.why {
     height: 50vh;
 }
-
 img {
     width: 45%;
 }
 
-h4 {
-    color: #F1FFFA;
-}
-
-h3 {
-    color: #F1FFFA90;
+.serviceDescription{
     font-size: 1rem;
     display: flex;
     margin-left: 3%;
 }
 
-.why {
-    height: 50vh;
-}
-
 .contact {
-    height: 100vh;
+    height: 20vh;
+}
+.why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.whyDescription{
+    width: 60%;
 }
 
 @media screen and (max-width: 900px) {
@@ -102,7 +119,9 @@ h3 {
     .heroText {
         font-size: 4.4rem;
     }
-
+        .whyDescription{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -122,11 +141,10 @@ h3 {
     img {
         width: 40%;
     }
-
     .services {
-        margin-bottom: 25px;
         width: 80%;
         height: 33%;
+     
     }
 
     .hero {
@@ -136,5 +154,11 @@ h3 {
     .heroText {
         font-size: 3rem;
     }
+
+    .why{
+        height: 100vh;
+    }
+
+
 
 }

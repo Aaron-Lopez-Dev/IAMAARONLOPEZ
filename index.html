@@ -13,13 +13,20 @@
 <body>
 
     <nav id="navBar">
-        <div class="logo"></div>
+        <div class="logo">
+            </div>  
         <div class="links">
             <ul>
-                <a href="#why">
+                 <a href="#" id="home">
+                    <li>HOME</li>
+                </a>
+                <a href="#" id="why">
                     <li>WHY ME?</li>
                 </a>
-                <a href="blogs.html">
+                <a href="#" id="serviceButton">
+                    <li>SERVICES</li>
+                </a>
+                <a href="blogs.html" class="blogButton">
                     <li>BLOG</li>
                 </a>
                 <a href="sms:5613328090?body=Hi Aaron, im interested in getting a website made.">
@@ -32,41 +39,40 @@
         </div>
     </nav>
 
-    <section class="hero contentBox">
+    <section class="hero contentBox" id="hero">
         <div class="content">
-            <h2 class="heroText">AARON LOPEZ.<br></h2>
+            <h2 class="heroText">AARON LOPEZ.</h2>
             <span class="description">Freelance Web Developer</span>
-            <span class="description">Local to the Central Florida Area</span>
-            </span>
-            <h4 id="textChange"></h4>
+            <span class="description">Location: Clermont, Florida</span>
         </div>
     </section>
 
     <section class="contentBox serviceSection" id="services">
         <div class="services">
             <img src="assets/design-systems-svgrepo-com.svg">
-            <h2>Website Design</h2>
+            <h2 class="serviceTitle">Website Design</h2>
             <h3 class="serviceDescription">Creating visually stunning and user-friendly websites
                 that reflect your brand and attract your ideal customers.</h3>
         </div>
         <div class="services">
             <img src="assets/web-development-svgrepo-com.svg">
-            <h2>Development</h2>
+            <h2 class="serviceTitle">Development</h2>
             <h3 class="serviceDescription">From simple sites to advanced applications, we build powerful websites that
                 work seamlessly on all
                 devices.</h3>
         </div>
         <div class="services">
             <img src="assets/internet-svgrepo-com.svg">
-            <h2>Hosting</h2>
+            <h2 class="serviceTitle">Hosting</h2>
             <h3 class="serviceDescription">Enjoy peace of mind with our secure, high-speed
                 hosting and ongoing technical support.</h3>
         </div>
     </section>
 
-    <section class="contentBox why" id="why">
+    <section class="contentBox why" id="whySection">
         <h3 class="whyHeading">Why Work With Me?</h3>
-        <p class="whyDescription">When it comes to building your website, I believe in doing things differently. <br><br>
+        <p class="whyDescription">When it comes to building your website, I believe in doing things differently.
+            <br><br>
             Instead of relying on pre-made templates or heavy website builders, I create each site from scratch with
             clean, custom code tailored to
             your exact needs. <br><br>
@@ -78,7 +84,9 @@
             fits your brand better.
         </p>
     </section>
-    <section class="contact contentBox"></section>
+    <section id="section" class="demo">
+        <a href="#"><span></span></a>
+    </section>
     <script src="script.js"></script>
 
 </body>

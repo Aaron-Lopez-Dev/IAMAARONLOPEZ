@@ -7,6 +7,7 @@ nav {
     top: 0;
     background-color: #0D1321;
     z-index: 999;
+    border-bottom: #EB5E28 2px solid;
 }
 
 li {

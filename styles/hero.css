@@ -1,6 +1,6 @@
 :root {
     --main-text-color: #f1fffaff;
-    --secondary-text-color: #f1fffa90;
+    --secondary-text-color: #f1fffa99;
     --main-bg: #0d1321ff;
     --accent-flame: #eb5e28ff;
     --accent-chefchaouen-Blue: #5386e4ff;
@@ -26,11 +26,11 @@ body {
 .whyHeading {
     font-size: 1.9rem;
     text-align: center;
+    margin: 50px auto;
 }
 
 .whyDescription {
     line-height: 1.7;
-    margin-top: 15px;
     font-size: 1.1rem;
 }
 
@@ -38,19 +38,13 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-
 }
 
-h2 {
+.serviceTitle {
     font-size: 1.3rem;
-    margin-top: 250px;
     text-align: center;
-    margin: 0;
+    margin: 10px auto;
     width: 100%;
-}
-
-.heroText {
-    font-size: 6rem;
 }
 
 .serviceSection {
@@ -58,6 +52,10 @@ h2 {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25vh;
 }
 
 .content {
@@ -70,14 +68,28 @@ h2 {
     font-size: 1.3rem;
     margin-top: 10px;
     border: 2px solid white;
-
 }
 
 .hero {
     display: flex;
-    height: 40vh;
-    align-items: end;
+    flex-direction: column;
+    height: 85vh;
     top: 80px;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.heroText {
+    font-size: 3.4rem;
+    text-align: center;
+    margin: auto;
+}
+
+.description {
+    text-align: center;
 }
 
 .services {
@@ -87,25 +99,22 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 }
 
-.serviceSection,
-.why {
+.serviceSection {
     height: 50vh;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 80;
 }
 
 img {
-    width: 45%;
-}
-
-.serviceDescription {
-    font-size: 1rem;
-    display: flex;
-    margin-left: 3%;
-}
-
-.contact {
-    height: 20vh;
+    width: 60%;
+    margin: 0;
 }
 
 .why {
@@ -113,68 +122,53 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    right: 0;
 }
 
-.whyDescription {
-    width: 60%;
+.hero,
+.whySection,
+.serviceSection {
+    transition: 500ms ease-in;
 }
 
-.services {
-    transform: scale(1);
-    transition: transform 0.3 ease-in-out;
+.blogButton{
+    display: none;
 }
 
-.services.grow {
-    transform: scale(1.2);
-}
-
-@media screen and (max-width: 900px) {
-
-    .heroText {
-        font-size: 4.4rem;
-    }
-
-    .whyDescription {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h4 {
-        font-size: 4rem;
+@media screen and (max-width: 550px) {
+    .services {
+        width: 80%;
+        height: 28%;
+        margin: 0 auto;
     }
 
     .serviceSection {
-        display: flex;
-        height: 100%;
+        height: 100vh;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 140vh;
+        top: 80;
+    }
+
+    .serviceDescription {
+        width: 100%;
     }
 
     img {
-        width: 40%;
-    }
-
-    .services {
-        width: 80%;
-        height: 33%;
-
-    }
-
-    .hero {
-        height: 35vh;
-    }
-
-    .heroText {
-        font-size: 3rem;
+        width: 50%;
+        margin: 0;
     }
 
     .why {
-        height: 100vh;
+        top: 8vh;
     }
 
+    .serviceSection {
+        top: 80px;
+    }
 
-
+    .blogButton {
+        display: none;
+    }
 }

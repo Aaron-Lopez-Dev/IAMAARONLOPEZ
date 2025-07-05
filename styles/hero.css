@@ -131,7 +131,8 @@ img {
 .hero,
 .whySection,
 .serviceSection {
-    transition: 500ms ease-in;
+    /* property name | duration | easing function | delay */
+    transition: opacity 500ms ease-out 0s;
 }
 
 .blogButton{

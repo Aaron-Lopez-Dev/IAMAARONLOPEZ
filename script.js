@@ -1,7 +1,7 @@
 // Store Buttons 
-const whyButton = document.getElementById('why')
+const whyButton = document.getElementById('whyButton')
 const serviceButton = document.getElementById('serviceButton')
-const homeButton = document.getElementById('home')
+const homeButton = document.getElementById('homeButton')
 
 //Store Sections
 const heroSection = document.getElementById('hero');
@@ -35,7 +35,7 @@ function initialDisplay() {
   whySection.style.opacity = '0'
   serviceSection.style.opacity = '0'
 
-      if (window.innerWidth <= 550) {
+  if (window.innerWidth <= 550) {
     serviceSection.style.height = '80vh'
   }
 }
@@ -45,8 +45,11 @@ function displayHeroSection() {
   whySection.style.opacity = '0'
   serviceSection.style.opacity = '0'
 
-    if (window.innerWidth <= 550) {
-    serviceSection.style.height = '80vh'
+  if (window.innerWidth <= 550) {
+    serviceSection.style.height = '70vh'
+    homeButton.style.display = 'none'
+    whyButton.style.display = 'inline-block'
+    serviceButton.style.display = 'inline-block'
   }
 
 }
@@ -56,8 +59,11 @@ function displayWhySection() {
   whySection.style.opacity = '1'
   serviceSection.style.opacity = '0'
 
-    if (window.innerWidth <= 550) {
-    serviceSection.style.height = '80vh'
+  if (window.innerWidth <= 550) {
+    serviceSection.style.height = '70vh'
+    homeButton.style.display = 'inline-block'
+    whyButton.style.display = 'none'
+    serviceButton.style.display = 'inline-block'
   }
 
 }
@@ -68,7 +74,10 @@ function displayServiceSection() {
   serviceSection.style.opacity = '1'
 
   if (window.innerWidth <= 550) {
-    serviceSection.style.height = '170vh'
+    serviceSection.style.height = '115vh'
+    homeButton.style.display = 'inline-block'
+    whyButton.style.display = 'inline-block'
+    serviceButton.style.display = 'none' 
   }
 }
 

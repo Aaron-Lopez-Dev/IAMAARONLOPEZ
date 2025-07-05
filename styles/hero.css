@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-text-color: #f1fffaff;
     --secondary-text-color: #f1fffa90;
     --main-bg: #0d1321ff;
@@ -13,20 +13,22 @@
     scroll-behavior: smooth;
 }
 
-body{
+body {
     color: var(--main-text-color)
 }
 
 .description,
 .serviceDescription,
-.whyDescription{
+.whyDescription {
     color: var(--secondary-text-color);
 }
-.whyHeading{
+
+.whyHeading {
     font-size: 1.9rem;
     text-align: center;
 }
-.whyDescription{
+
+.whyDescription {
     line-height: 1.7;
     margin-top: 15px;
     font-size: 1.1rem;
@@ -64,7 +66,7 @@ h2 {
     justify-content: center;
 }
 
-.enhance{
+.enhance {
     font-size: 1.3rem;
     margin-top: 10px;
     border: 2px solid white;
@@ -91,11 +93,12 @@ h2 {
 .why {
     height: 50vh;
 }
+
 img {
     width: 45%;
 }
 
-.serviceDescription{
+.serviceDescription {
     font-size: 1rem;
     display: flex;
     margin-left: 3%;
@@ -104,14 +107,25 @@ img {
 .contact {
     height: 20vh;
 }
-.why{
+
+.why {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.whyDescription{
+
+.whyDescription {
     width: 60%;
+}
+
+.services {
+    transform: scale(1);
+    transition: transform 0.3 ease-in-out;
+}
+
+.services.grow {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 900px) {
@@ -119,7 +133,8 @@ img {
     .heroText {
         font-size: 4.4rem;
     }
-        .whyDescription{
+
+    .whyDescription {
         width: 100%;
     }
 }
@@ -141,10 +156,11 @@ img {
     img {
         width: 40%;
     }
+
     .services {
         width: 80%;
         height: 33%;
-     
+
     }
 
     .hero {
@@ -155,7 +171,7 @@ img {
         font-size: 3rem;
     }
 
-    .why{
+    .why {
         height: 100vh;
     }
 

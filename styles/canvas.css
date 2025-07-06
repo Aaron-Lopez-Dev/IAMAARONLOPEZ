@@ -1,0 +1,6 @@
+.background{
+    position: absolute;
+    z-index: -999;
+    margin: 0;
+    filter: blur(1.5px);
+}

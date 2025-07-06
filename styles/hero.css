@@ -14,7 +14,8 @@
 }
 
 body {
-    color: var(--main-text-color)
+    color: var(--main-text-color);
+    overflow-x: hidden;
 }
 
 .description,
@@ -56,6 +57,7 @@ body {
     left: 0;
     right: 0;
     top: 25vh;
+    opacity: 0;
 }
 
 .content {
@@ -126,6 +128,7 @@ img {
     top: 25vh;
     left: 0;
     right: 0;
+    opacity: 0;
 }
 
 .hero,

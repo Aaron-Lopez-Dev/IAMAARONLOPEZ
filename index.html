@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Web Dev</title>
+    <link href="styles/canvas.css" rel="stylesheet">
     <link href="styles/navbar.css" rel="stylesheet">
     <link href="styles/hero.css" rel="stylesheet">
 
@@ -38,6 +39,7 @@
             </ul>
         </div>
     </nav>
+<canvas class="background" width="window.innerWidth" height="window.innerHeight" id="bgCanvas"></canvas>
 
     <section class="hero contentBox" id="hero">
         <div class="content">
@@ -84,9 +86,7 @@
             fits your brand better.
         </p>
     </section>
-    <section id="section" class="demo">
-        <a href="#"><span></span></a>
-    </section>
+    <script src="bg.js"></script>
     <script src="script.js"></script>
 
 </body>

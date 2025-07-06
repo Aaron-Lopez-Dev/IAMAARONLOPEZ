@@ -75,7 +75,7 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 70vh;
     top: 80px;
     align-content: center;
     justify-content: center;
@@ -130,7 +130,6 @@ img {
     right: 0;
     opacity: 0;
 }
-
 .hero,
 .whySection,
 .serviceSection {
@@ -141,18 +140,32 @@ img {
 .blogButton{
     display: none;
 }
+.lang{
+    width: 80%;
+    height: 75px;
+    margin: auto;
+    max-width: 500px;
+    position: relative;
+    top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.langImg{
+    width: 50px;
+}
 @media screen and (max-width: 550px) {
     .services {
         width: 80%;
-        height: 28%;
-        margin: 0 auto;
+        height: 60%;
+        margin: 10px auto;
     }
 
     .serviceSection {
-        height: 100vh;
         flex-direction: column;
-        top: 80;
+        top: 80px;
+        position: absolute;
     }
 
     .serviceDescription {
@@ -166,10 +179,6 @@ img {
 
     .why {
         top: 8vh;
-    }
-
-    .serviceSection {
-        top: 80px;
     }
 
     .blogButton {

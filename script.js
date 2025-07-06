@@ -46,7 +46,6 @@ function displayHeroSection() {
   serviceSection.style.opacity = '0'
 
   if (window.innerWidth <= 550) {
-    serviceSection.style.height = '70vh'
     homeButton.style.display = 'none'
     whyButton.style.display = 'inline-block'
     serviceButton.style.display = 'inline-block'
@@ -60,7 +59,7 @@ function displayWhySection() {
   serviceSection.style.opacity = '0'
 
   if (window.innerWidth <= 550) {
-    serviceSection.style.height = '70vh'
+
     homeButton.style.display = 'inline-block'
     whyButton.style.display = 'none'
     serviceButton.style.display = 'inline-block'
@@ -74,7 +73,6 @@ function displayServiceSection() {
   serviceSection.style.opacity = '1'
 
   if (window.innerWidth <= 550) {
-    serviceSection.style.height = '115vh'
     homeButton.style.display = 'inline-block'
     whyButton.style.display = 'inline-block'
     serviceButton.style.display = 'none' 

@@ -31,7 +31,7 @@ function drawBackground() {
             ctx.shadowOffsetY = 0;
             ctx.fillRect(starX, starY, starSize, starSize)
         }
-    }, 400)
+    }, 100)
 
     setInterval(function size() {
         for (let i = 0; i < 1; i++) {
@@ -43,7 +43,7 @@ function drawBackground() {
                 }
             }
         }
-    }, 400)
+    }, 100)
 
     setInterval(function flashing() {
 
@@ -57,7 +57,7 @@ function drawBackground() {
             }
            
         }
-    }, 450)
+    }, 150)
 
 }
 
